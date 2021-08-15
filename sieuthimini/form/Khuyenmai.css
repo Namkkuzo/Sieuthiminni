@@ -1,0 +1,68 @@
+﻿.main_v {
+    margin: 20px;
+    grid-column: 2/12;
+    padding: 7px;
+}
+
+.image_v {
+    width: 40%;
+    object-fit: cover;
+    float: left;
+}
+
+.tieude_v {
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+
+.noidung_v {
+    font-style: italic;
+    font-size: 16px;
+    clear: both;
+}
+
+.km_v {
+    clear: both;
+    margin: 10px;
+    display: flex;
+}
+
+.ndkm_v {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .main_v {
+        grid-column: 1/13;
+    }
+
+    .ndkm_v {
+        clear: both;
+        width: 80%;
+        margin: 0 10%;
+        text-align: center;
+    }
+
+    .image_v {
+        clear: both;
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .tieude_v {
+        clear: both;
+        float: none;
+    }
+
+    .noidung_v {
+        clear: both;
+    }
+
+    .km_v {
+        display: block;
+        clear: both;
+    }
+}

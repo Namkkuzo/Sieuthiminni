@@ -1,0 +1,334 @@
+﻿/*trang master*/
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+#phanduoi_master{
+    clear:both;
+}
+.a1_master {
+    text-decoration: none;
+    font-family: iCielMijas;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 14px;
+    color: #000;
+}
+.linkchitiet_nam{
+    text-decoration:none;
+    color:#000;
+}
+body {
+    min-width: 280px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+/* header  */
+header{
+    grid-column:1/13;
+}
+#dautrang_master {
+    width: 100%;
+    height:150px;
+}
+#menu_master {
+    background: #0f8235;
+    width: 100%;
+    line-height: 70px;
+    height: 70px;
+}
+#logo_master {
+    height:150px;
+    padding-left: 80px;
+}
+#timkiem_dangnhap_master {
+    float:right;
+    height:150px;
+    margin-right:30px;
+    width:500px;
+}
+.dangnhap_master {
+    float: right;
+    border: 0px;
+    background: #92c4a3;
+    width: 90px;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 5px;
+}
+::placeholder {
+    font-style:italic;
+    color:#000;
+    font-size:16px;
+}
+#khungtim_master {
+    border-radius:10px;
+    margin:25px;
+    float: left;
+    width: 250px;
+    border: 3px solid #000000;
+    height: 35px;
+    line-height:35px;
+}
+#inputtimkiem_master{
+    padding-left:4px;
+    border:0;
+    width:210px;
+    height:35px;
+    border-radius:10px;
+    float:left;
+}
+.button_timkiem_master {
+    border:2px solid #000;
+    width:36px;
+    height:35px;
+    border-radius:5px;
+    background-image: url('../png/icon_search.png');
+}
+#danhmuc_master{
+    background: #0f8235;
+    margin: 0 auto;
+    width: 84%;
+    list-style-type: none;
+    color: #fff;
+}
+.giohang_master {
+    background-image: url('../png/icon_giohang.png');
+    width: 46px;
+    height: 39px;
+    float: left;
+    margin: 23px 0 23px 0;
+}
+.chitiet_menu_master {
+    text-align:center;
+    width: 25%;
+    float:left;
+}
+.chitiet_menu_master :hover {
+        background: #8ef4af;
+        color:#000;
+    }
+.a_master {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+        font-family: iCielCadena;
+        font-weight: bolder;
+    }
+/*footer*/
+footer {
+    grid-column: 1/13;
+    height: 100px;
+    background: #e5e8e6;
+    display:grid ;
+    grid-template-columns:repeat(12,1fr);
+    position:relative;
+}
+#footer1_master {
+    grid-column: 1/4;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+#footer2_master {
+    grid-column: 4/7;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+#footer3_master {
+    grid-column: 7/10;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+#footer4_master {
+    grid-column: 10/13;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+#logofooter_master{
+    height:80px;
+    margin:10px 0 10px 40px; 
+}
+.chufooter_master {
+    font-family: iCielBalihoScript;
+    font-weight:bold;
+}
+
+
+/* responsive trang master*/
+@media screen and (min-width:769px)and ( max-width:1040px) {
+    #logo_master {
+        height: 120px;
+        padding-left: 40px;
+    }
+
+    #khungtim_master {
+        margin: 7px;
+    }
+
+    .giohang_master {
+        margin: 7px 0 7px 0;
+    }
+
+    .a_master {
+        font-size: 1.5rem;
+    }
+
+    #danhmuc_master {
+        width: 100%;
+    }
+    #dautrang_master {
+        height: 120px;
+    }
+
+    #timkiem_dangnhap_master {
+        height: 120px;
+        width: 350px;
+    }
+
+    #menu_master {
+        line-height: 60px;
+        height: 60px;
+    }
+
+    #footer1_master {
+        grid-column: 1/4;
+    }
+
+    #footer2_master {
+        grid-column: 4/7;
+    }
+
+    #footer3_master {
+        grid-column: 7/10;
+    }
+
+    #footer4_master {
+        grid-column: 10/13;
+    }
+
+    #logofooter_master {
+        height: 80px;
+        margin: 10px 0 10px 40px;
+    }
+
+    .chufooter_master {
+        font-family: iCielBalihoScript;
+        font-weight: bold;
+    }
+
+    .icon_footer_master {
+        width: 25px;
+    }
+}
+@media screen and (max-width:768px){
+    #danhmuc_master {
+        padding-top: 46px;
+        top: 0;
+        left: -150px;
+        position: fixed;
+        width: 150px;
+        flex-direction: column;
+        height: 100vh;
+        z-index: 2;
+        transition: 0.4s;
+    }
+    .chitiet_menu_master{
+        width:100%;
+    }   
+    .a_master {
+        font-size: 0.9rem;
+    }
+    .bar1_master, .bar2_master, .bar3_master {
+        width: 35px;
+        height: 5px;
+        background-color: #000;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .hihi_master {
+        -webkit-transform: translateX(150px);
+        transform: translateX(150px);
+    }
+    .change .bar1_master {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2_master {
+        opacity: 0;
+    }
+
+    .change .bar3_master {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    #com_master {
+        top: 105px;
+        margin: 5px 0 5px 10px;
+        position: absolute;
+        z-index: 3;
+        cursor: pointer;
+    }
+    .change {
+        top: 0 !important;
+    }
+    #logo_master{
+        padding-left:25px;
+        height:90px;
+    }
+    #timkiem_dangnhap_master {
+        height: 100px;
+        margin-right: 10px;
+        width: 100px;
+    }
+    .dangnhap_master {
+        width: 80px;
+        font-size: 1rem;
+    }
+    .giohang_master{
+        clear:both;
+        float:right;
+        margin:0;
+    }
+    #khungtim_master {
+        width:180px;
+        margin:0;
+        background:#fff;
+        position: absolute;
+        top: 109px;
+        right: 10px;
+    }
+    footer{
+        display:block;
+        height:250px;
+    }
+    #logofooter_master{
+        display:none;
+    }
+    #footer2_master,
+    #footer3_master,
+    #footer4_master {
+        width: 100%;
+        text-align: center;
+        position: unset;
+        top: 0;
+        left: 0;
+        transform: unset;
+    }
+    .icon_footer_master {
+        width: 25px;
+    }
+    #inputtimkiem_master{
+        width:140px;
+    }
+}

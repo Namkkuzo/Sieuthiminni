@@ -1,0 +1,56 @@
+﻿.main_nam{
+    grid-column:1/13;
+    line-height: 2.5rem;
+    width:96%;
+    max-width:1300px;
+    margin: 0 auto;
+    padding: 25px 2% 25px 2%;
+}
+table{
+    border-collapse:collapse;
+    width:100%;
+    margin: 0 auto;
+}
+table,tr,th,td{
+    border: 1px solid #000;
+    font-size:1.2rem;
+    text-align:center;
+}
+.trangthaidon_nam {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0f8235;
+}
+th {
+    background: lavender;
+}
+.nut {
+    margin:30px 25px 25px 25px;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    border: 1px solid red;
+    background-color: #ffeee8;
+    font-size: 1rem;
+    color: orangered;
+    font-weight: bold;
+    border-radius:10px;
+}
+
+@media screen and (max-width:768px) {
+    td,th{
+        font-size:0.9rem;
+        line-height:1.7rem;
+    }
+    .nut {
+        font-size: 13px;
+        margin: 15px 0 13px 25px;
+    }
+    .trangthaidon_nam{
+        font-size: 1.2rem;
+    }
+}

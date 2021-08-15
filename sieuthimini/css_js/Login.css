@@ -1,0 +1,50 @@
+﻿form{
+    width: 100%;
+    padding-bottom: 80px;
+    grid-column: 5/9;
+}
+#tdn, #mk {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+h2 {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    grid-column: 5/9;
+    font-size: 28px;
+    text-align: center;
+}
+#dn1 {
+    background-color: #0f8235;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+#pass, #user{
+    font-size: 20px;
+}
+#dn1:hover{
+    opacity: 0.8;
+}
+.link{
+    text-align: center;
+}
+@media screen and (max-width:768px) {
+    form {
+        grid-column: 3/11;
+    }
+    h2 {
+        padding:20px 0 20px 0;  
+        grid-column: 3/11;
+    }
+
+}
+

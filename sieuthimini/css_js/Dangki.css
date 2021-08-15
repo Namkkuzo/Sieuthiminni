@@ -1,0 +1,60 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+#dangki {
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 80px;
+    grid-column: 5/9;
+    font-size: 18px;
+}
+.baoloi {
+    font-size: 16px;
+    color: red;
+    position:absolute;
+}
+h2 {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    grid-column: 5/9;
+    font-size: 28px;
+    text-align: center;
+}
+#dk {
+    background-color: #0f8235;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+tr{
+    height: 40px;
+    line-height: 40px;
+}
+table{
+    width:100%;
+    grid-colum: 5/9;
+    font-size: 18px;
+}
+#dk:hover{
+    opacity: 0.8;
+}
+td{
+    font-size: 16px;
+    text-align:center;
+}
+::placeholder{
+    font-size: 13px;
+}
+@media screen and (max-width:768px) {
+    #dangki {
+        grid-column: 2/12;
+    }
+
+    h2 {
+        grid-column: 2/12;
+    }
+}

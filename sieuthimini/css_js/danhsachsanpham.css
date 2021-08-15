@@ -1,0 +1,98 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#huy_content {
+    box-sizing: border-box;
+    grid-column: 1/ 13;
+    width: 1300px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 15px;
+}
+
+#huy_menu {
+    grid-column: 1/ 4;
+    max-height: 400px;
+}
+
+#huy_maincontent {
+    grid-column: 4/13;
+    box-shadow: 0 0.1vw 1vw #d1d1d1;
+}
+
+/* Menu */
+#danhmuc {
+    display: block;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    text-decoration: none;
+    color: #000000;
+}
+
+#huy_menu > ul > li {
+    list-style-type: none;
+}
+
+#huy_menu > ul > li > a {
+    font-size: 20px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    text-indent: 40px;
+    color: black;
+}
+
+#huy_menu > ul > li > a:hover {
+    box-shadow: 0 0.1vw 1vw #d1d1d1;
+}
+
+/* Sản phẩm */
+#huy_maincontent {
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+
+}
+
+#huy_maincontent :hover {
+    cursor: pointer;
+}
+/* đa màn hình */
+@media screen and (min-width:769px)and ( max-width:1040px) {
+    #huy_content{
+        width: 100%;
+    }
+    #huy_maincontent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #huy_menu > ul > li > a {
+        text-indent: 5px;
+    }
+}
+@media screen  and (max-width:768px) {
+    #huy_content {
+       
+        width: 100%;
+    }
+    #huy_menu {
+        grid-column: 1/ 13;
+        margin-bottom: 20px;
+    }
+
+    #huy_maincontent {
+        grid-column: 1/ 13;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #huy_menu > ul > li > a {
+        text-align: center;
+        text-indent: 5px;
+    }
+}

@@ -1,0 +1,30 @@
+﻿
+#huy_content {
+    box-sizing: border-box;
+    grid-column: 1/ 13;
+    max-width: 1300px;
+    width:100%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 15px;
+}
+.tukhoa{
+    font-size:1.4rem;
+    padding-left: 20px;
+}
+#tbketqua {
+    grid-column: 1/13;
+    display: block;
+    min-height: 50px;
+    line-height: 50px;
+}
+.sanphamnoibat_nam{
+    grid-column: 1/13;
+    box-shadow: 0 0.1vw 1vw #d1d1d1;
+}
+@media screen and (max-width:768px){
+    .tukhoa {
+        font-size: 1.2rem;
+    }
+}

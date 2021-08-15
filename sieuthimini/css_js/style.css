@@ -1,0 +1,147 @@
+﻿
+.ten_sp{font-size:20px ;
+        line-height:25px;
+}
+.thongtinkhac{
+    display:inline-table;
+}
+.slider{
+    float:left;
+    background: #fff;
+    width:70%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+}
+
+
+.sel {
+    margin-left: 15px;
+    width: 150px;
+}
+.add{
+    cursor: pointer;
+    width:175px;
+    height:40px;
+}
+.buy {
+    margin-left:10px;
+    width: 100px;
+    height: 40px;
+}
+span:hover{
+    border:blue;
+}
+#content {
+    
+    grid-column: 1/13;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1300px;
+    box-sizing: border-box;
+    margin-top:20px;
+}
+#thongso {
+    float:left;
+    width:30%;
+    line-height:35px;
+}
+#thongtin1 {
+    clear:both;
+}
+.thongsosp {
+    padding: 20px;
+}
+.demucthongso {
+    line-height:40px;
+    background:#eee;
+    color: darkred;
+    font-size: 18px;
+}
+.khunganhhienthi {
+    width: 42vw;
+    margin: 0 auto;
+    height: 33vw;
+}
+.anhhienthi {
+    object-fit: cover;
+    width: 42vw;
+    height: 33vw;
+}
+.anhhover{
+    display:none;
+}
+.anhslide {
+    width: 23%;
+    float: left;
+    height: 11vw;
+    margin: 1%;
+    object-fit: cover;
+}
+.gia {
+    color: darkred;
+    font-size: 45px;
+}
+@media screen and (min-width:769px)and ( max-width:1040px) {
+    .anhhienthi {
+        height: 45vw;
+        width: 58vw;
+    }
+    .khunganhhienthi {
+        height: 45vw;
+        width: 58vw;
+    }
+    .anhslide {
+        height: 13vw;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:768px) {
+    .anhhienthi {
+        height: 45vw;
+        width: 58vw;
+    }
+
+    .khunganhhienthi {
+        height: 45vw;
+        width: 58vw;
+    }
+    .gia {
+        font-size: 2.4rem;
+    }
+    .add {
+        width: 140px;
+    }
+    .anhslide {
+        height: 14vw;
+    }
+}
+
+@media screen and (max-width:499px) {
+    #thongso{
+        width:100%;
+        text-align:center;
+    }
+    .slider{
+        width:100%;
+    }
+    .anhhienthi {
+        height: 45vw;
+        width: 58vw;
+    }
+    .gia{
+        font-size:2rem;
+    }
+    .khunganhhienthi {
+        height: 45vw;
+        width: 58vw;
+    }
+    .add{
+        width:150px;
+    }
+    .anhslide {
+        height: 18vw;
+    }
+}
+

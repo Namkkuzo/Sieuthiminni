@@ -1,0 +1,104 @@
+﻿.main_nam {
+    max-width: 1280px;
+    grid-column: 1/13;
+    margin: 30px auto;
+    margin-bottom: 8vw;
+    box-shadow: 0 0.1vw 1vw #d1d1d1;
+}
+.congcu {
+    display: flex;
+    align-items: flex-end;
+    background-color: #3af0b0;
+    height: 70px;
+}
+span{
+    font-size: 20px;
+}
+.congcu > a {
+    display: block;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border: 1px solid #8f7a42;
+    border-bottom: none;
+    margin-right: 0.5vw;
+    background-color: gainsboro;
+    justify-content: center;
+    line-height: 40px;
+    text-decoration: none;
+    text-indent: 10px;
+}
+
+.congcu > a:hover {
+    border: 5px solid #8f7a42;
+    border-bottom: none;
+    height: 45px;
+    width: 155px;
+}
+
+th, td{
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+    td > span>a {
+        font-size: 1.2rem;
+    }
+    td > a {
+        font-size: 1.2rem;
+    }
+#tbl_huy {
+    text-align: center;
+    margin: 0px auto;
+    width: 1280px;
+}
+#menu_tbl_huy {
+    background-color: lavender;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/*Giỏ hàng*/
+.thanhtoan {
+    line-height: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 5px 0px;
+}
+.txtdiachi_nam{
+    grid-column: 1/8;
+    text-align: right;
+}
+.thanhtoan >a{
+    grid-column: 9/12;
+    height: 30px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 200px;
+}
+
+
+/*Đa màn hình*/
+@media screen and (min-width:769px)and ( max-width:1280px) {
+    .main_nam, #tbl_huy, .congcu {
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px) {
+    .main_nam, #tbl_huy, .congcu {
+        width: 100%;
+    }
+    .txtdiachi_nam {
+        text-align: center;
+        grid-column: 1/13;
+    }
+    .thanhtoan > a {
+        
+        grid-column: 5/8;
+    }
+}

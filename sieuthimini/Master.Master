@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="sieuthimini.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Siêu thị mini</title>
+    <link href="css_js/master.css" rel="stylesheet" />
+    <script src="../css_js/js/jquery-3.5.1.min.js"></script>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=width-device,initial-scal=1" />
+    <script src="../css_js/js/js_nam.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <div id="com_master" onclick="myFunction_master(this)">
+                <div class="bar1_master"></div>
+                <div class="bar2_master"></div>
+                <div class="bar3_master"></div>
+            </div>
+        <div class="dautrang_master">
+                <a href="trangchu.aspx"><img id="logo_master" src="../png/LOGO.png" /></a>
+            <div id="timkiem_dangnhap_master">
+                <div id="dangnhap_dangky_master">
+                    <%if (!(Boolean)Session["dangnhap"])
+                        { %>
+                    <button id="dangnhap1_master" class="dangnhap_master"><a class="a1_master" href="Login.aspx">Đăng nhập</a></button>
+                    <%}
+                    else
+                    { %>
+                    <button onclick="dangxuat()" class="dangnhap_master"><a class="a1_master" href="#">Đăng xuất</a></button>
+                    <%} %>
+                </div>
+                <div id="phanduoi_master">
+                    <div id="khungtim_master">
+                        <input  id="inputtimkiem_master" type="text" placeholder="Tìm kiếm..." />
+                        <button class="button_timkiem_master" onclick="timkiem()"></button>
+                    </div>
+                    <%
+                        if ((bool)Session["dangnhap"] && (bool)Session["admin"])
+                        {%>
+                    <a class="giohang_master" href="quanlydonhang.aspx"></a>
+                    <%}
+                        else
+                        {%> <a class="giohang_master" href="giohang.aspx"></a>
+                    <%} %>
+                </div>
+            </div>
+        </div>
+        <div id="menu_master">
+            <ul id="danhmuc_master">
+                <li class="chitiet_menu_master">
+                    <a class="a_master" href="./trangchu.aspx">Trang chủ
+                    </a>
+                </li>
+                <li class="chitiet_menu_master list2_master"><a class="a_master" href="Gioithieu.aspx">Giới thiệu</a></li>
+                <li class="chitiet_menu_master list2_master"><a class="a_master" href="danhsachsanpham.aspx">Sản Phẩm</a></li>
+                <li class="chitiet_menu_master list2_master"><a class="a_master" href="Khuyenmai.aspx">Khuyến mại</a></li>
+            </ul>
+        </div>
+    </header>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <footer>
+        <div id="footer1_master"><img id="logofooter_master" src="../png/LOGO.png" /></div><br />
+        <div id="footer2_master"><p class="chufooter_master">Trụ sở chính:</p><br /> <p  class="chufooter_master">96 Định Công,Thanh Xuân,Hà nội</p></div><br />
+        <div id="footer3_master"><p  class="chufooter_master">Thông tin liên hệ:</p><br /><p  class="chufooter_master">Hotline: 0987456321</p><br /><p  class="chufooter_master">Email: nhom1@gmail.com</p></div><br />
+        <div id="footer4_master">
+            <p  class="chufooter_master">FOLLOW US</p>
+            <br />
+            <div>
+                <img class="icon_footer_master" src="../png/icon_youtube.png" />
+                <img class="icon_footer_master" src="../png/icon_instar.png" />
+                <img class="icon_footer_master" src="../png/icon_fb.png" />
+                <img class="icon_footer_master" src="../png/icon_gg.png" />
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -97,14 +97,16 @@ header{
     position: relative;
 }
 
-.totalCart{
-    position:absolute;
-    width : 30px;
-    border-radius : 20px;
-    height : 30px;
-    background-color : red ;
-    right : -10px ;
-    top : -10px;
+.totalCartNumber {
+    position: absolute;
+    width: 30px;
+    text-align : center;
+    line-height : 30px;
+    border-radius: 20px;
+    height: 30px;
+    background-color: red;
+    right: -10px;
+    top: -10px;
 }
 .giohang_master {
     background-image: url('../png/icon_giohang.png');

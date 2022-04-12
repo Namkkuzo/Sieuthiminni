@@ -7,7 +7,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <main class="main_nam">
-        <form method="post">
+
             <div class="congcu">
                 <a href="donmua.aspx"><i class="fas fa-store"></i><span>Đơn mua</span></a>
             </div>
@@ -28,6 +28,7 @@
                             <td><span><%# Eval("gia") %></span></td>
                             <td>
                                 <input type="number" onchange="doisoluong(<%# Container.ItemIndex %>,this)" value="<%# Eval("soluong") %>" /></td>
+                            <td><button onclick ="deleteCartById (<%# Eval("masp") %>, <%# Container.ItemIndex %>)">Xóa</button></td>
                         </tr>
                     </ItemTemplate>
                 </asp:Repeater>
@@ -39,6 +40,6 @@
                 <a href="javascript:thanhtoan()">Thanh toán</a>
             </div>
             
-        </form>
+
     </main>
 </asp:Content>

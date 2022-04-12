@@ -71,6 +71,9 @@ function capnhatdangban(ma) {
     }
 }
 function themgiohang(ma, gia) {
+    //var total = document.getElementsByClassName("totalCartNumber")[0].innerHTML;
+    
+    //document.getElementsByClassName("totalCartNumber")[0].innerHTML = (total *1) + 1;
     $.post("xuly.aspx",
         {
             "action": "themgio",
@@ -97,6 +100,27 @@ function doisoluong(stt, a) {
         });
     if (a.value==0)
     $("#donhang_nam" + stt).slideUp();
+}
+
+function deleteCartById(ma, stt) {
+    //var text = "Bạn có muốn xóa sản phẩm này khỏi đơn hàng ?";
+    //if (confirm(text) == true) {
+    //    $.post("xuly.aspx",
+    //        {
+    //            "action": "deleteCartById",
+    //            "masp": ma
+    //        });
+
+    //    $("#donhang_nam" + stt).slideUp();
+    //}
+    $.post("xuly.aspx",
+        {
+            "action": "deleteCartById",
+            "masp": ma
+        });
+
+    $("#donhang_nam" + stt).slideUp();
+    
 }
 function thanhtoan() {
     var a = document.getElementsByClassName("luachonthanhtoan_nam");

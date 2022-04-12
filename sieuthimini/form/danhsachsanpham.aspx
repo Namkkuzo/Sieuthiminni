@@ -5,7 +5,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <!DOCTYPE html>
-    <div id="huy_content">
+    <form runat="server">
+        <div id="huy_content">
         <div id="huy_menu">
             <label id="danhmuc">DANH MỤC SẢN PHẨM</label>
             <ul>
@@ -19,8 +20,8 @@
         </div>
 
         <div id="huy_maincontent">
-            <asp:Repeater ID="listsp" runat="server">
-                <ItemTemplate>
+            <asp:ListView runat ="server" id ="list_product">
+                 <ItemTemplate>
                         <div class="sanpham_nam">
                             <img class="anhsanpham_nam" src="../png/anhweb/<%# Eval("sAnh") %>" />
                             <div class="wrapper_nam"> 
@@ -39,7 +40,19 @@
                             <span class="giohang"  onclick="themgiohang(<%# Eval("iMasanpham") %>,<%# Eval("iGia") %>)" >Thêm vào giỏ hàng</span>
                         </div>
                     </ItemTemplate>
-            </asp:Repeater>
+            </asp:ListView>
+
+
         </div>
+        <!--
+            <asp:DataPager ID="DataPager1" runat="server" PagedControlID="list_product" PageSize="9999" >
+                <Fields>
+                    <asp:NextPreviousPagerField ButtonType="Button" ButtonCssClass="pageIndex"/>
+                    <asp:NumericPagerField ButtonType="Button" NumericButtonCssClass="pageIndex" />
+                </Fields>
+            </asp:DataPager>
+            -->
+        
     </div>
+    </form>
 </asp:Content>

@@ -31,6 +31,22 @@ namespace sieuthimini.form
                 Response.Write(json);
                 Response.End();
             }
+            if ((string)Request.Params["action"] == "deleteCartById")
+            {
+                int taikhoan = Convert.ToInt32(Session["taikhoan"]);
+                int masp = Int32.Parse( Request.Params["masp"]) ;
+                dc.deleteGiohang(masp, taikhoan);
+                List<giohang1> a = (List<giohang1>)Session["giohang"];
+                foreach (giohang1 a1 in a)
+                {
+                    if (a1.masp.Equals(masp))
+                    {
+                        a.Remove(a1);
+                        break;
+                    }
+                }
+                Session["giohang"] = a;
+            }
             if ((string)Request.Params["action"] == "dangban") 
             {
                 if ((bool)Session["dangnhap"] && (bool)Session["admin"])

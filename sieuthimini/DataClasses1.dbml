@@ -373,4 +373,9 @@
     <Parameter Name="maloai" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.deleteGiohang" Method="deleteGiohang">
+    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="makh" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

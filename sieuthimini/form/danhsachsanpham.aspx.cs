@@ -14,21 +14,26 @@ namespace sieuthimini.form
         DataClasses1DataContext dc = new DataClasses1DataContext();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if ((bool)Session["dangnhap"]&& (bool)Session["admin"])
-            {
-                Response.Redirect("quanlysp.aspx");
-            }    
-            Loaihang.DataSource = dc.danhsachloaisp();
-            Loaihang.DataBind();
-            if (Request["loaihang"] == null)
-            {
-                listsp.DataSource = dc.danhsachsanpham(null);
-                listsp.DataBind();
+            if (!Page.IsPostBack)
+            { 
+                if ((bool)Session["dangnhap"] && (bool)Session["admin"])
+                {
+                    Response.Redirect("quanlysp.aspx");
+                }
+                Loaihang.DataSource = dc.danhsachloaisp();
+                Loaihang.DataBind();
+                if (Request["loaihang"] == null)
+                {
+                    list_product.DataSource = dc.danhsachsanpham(null);
+                    list_product.DataBind();
+                }
+                else
+                {
+                    list_product.DataSource = dc.danhsachsanpham(Convert.ToInt32(Request["loaihang"]));
+                    list_product.DataBind();
+                }
             }
-            else {
-                listsp.DataSource = dc.danhsachsanpham(Convert.ToInt32(Request["loaihang"]));
-                listsp.DataBind();
-            }
+                
         }
     }
 }

@@ -1,121 +1,127 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 14.375" name="DataClasses1">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 15.5" name="DataClasses1">
   <DataContextMoniker Name="/DataClasses1DataContext" />
   <nestedChildShapes>
-    <classShape Id="ccc9d114-2171-4b46-bb34-aa2c9b77bb50" absoluteBounds="6.75, 3.75, 2, 1.0016910807291666">
+    <classShape Id="ce3f4d74-0a5d-4484-8419-a7903806e574" absoluteBounds="6.75, 3.75, 2, 1.0016910807291666">
       <DataClassMoniker Name="/DataClasses1DataContext/capnhatlancuoi" />
       <nestedChildShapes>
-        <elementListCompartment Id="b51b6648-e24c-40eb-83f5-729f74150214" absoluteBounds="6.765, 4.21, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="9f854bd4-6b98-4aba-b5c4-b45029dd95bb" absoluteBounds="6.765, 4.21, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="cf933b71-2732-484f-a89b-5ed4af082df5" absoluteBounds="3.75, 3.5, 2, 1.1939925130208335">
+    <classShape Id="558d9c29-8291-4ea8-99bf-219226f4da57" absoluteBounds="3.75, 5.625, 2, 1.1939925130208344">
       <DataClassMoniker Name="/DataClasses1DataContext/tblTrangthaidonhang" />
       <nestedChildShapes>
-        <elementListCompartment Id="277b17cd-1ff7-41e6-b6a1-0b41689edaba" absoluteBounds="3.765, 3.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="4bedb73a-9e55-4a15-aa7c-9f975c75399a" absoluteBounds="3.765, 6.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="58329e35-2a5b-4f40-842e-9fea73073247" absoluteBounds="3.5, 8.75, 2, 1.3862939453124987">
+    <classShape Id="cc67ce11-9e38-4fb2-95cf-c4a23cb9759f" absoluteBounds="3.5, 10.75, 2, 1.3862939453124987">
       <DataClassMoniker Name="/DataClasses1DataContext/tblAnhsp" />
       <nestedChildShapes>
-        <elementListCompartment Id="63485fa8-cfcf-4a15-a9f8-cf0dbc776f03" absoluteBounds="3.515, 9.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="9449640b-61d4-4746-b543-bc9f6fac2b6d" absoluteBounds="3.515, 11.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="e7aa85bf-1614-420b-ba04-330fe721f554" absoluteBounds="3.5, 0.75, 2, 1.3862939453125005">
+    <classShape Id="00ae2de2-7172-4ab9-a370-9a2c167c5acd" absoluteBounds="3.5, 2.75, 2, 1.3862939453125005">
       <DataClassMoniker Name="/DataClasses1DataContext/tblChitietkhuyenmai" />
       <nestedChildShapes>
-        <elementListCompartment Id="ed34dd15-9196-4126-b900-f19e11ed631b" absoluteBounds="3.515, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="8989288d-4b2c-48b5-87d0-759fff64787c" absoluteBounds="3.515, 3.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="b90d1f26-c267-469a-9c9b-326f6d2ff851" absoluteBounds="6.5, 6.125, 2, 2.5401025390625005">
+    <classShape Id="7b408541-290d-4f5e-9611-642ce57df3ac" absoluteBounds="6.5, 8.25, 2, 2.5401025390624987">
       <DataClassMoniker Name="/DataClasses1DataContext/tblGiohang" />
       <nestedChildShapes>
-        <elementListCompartment Id="c040f462-2cac-4f51-8d8e-0a1388274594" absoluteBounds="6.515, 6.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="28f7bbee-bf66-4e30-95b2-4df9e8a3843c" absoluteBounds="6.515, 8.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="7767e2db-3669-4ef9-bdce-ccece5045309" absoluteBounds="0.75, 11.625, 2, 2.5401025390624987">
+    <classShape Id="257c97b5-c186-4c88-9037-6d26e8a359f3" absoluteBounds="0.75, 2.25, 2, 2.5401025390625005">
       <DataClassMoniker Name="/DataClasses1DataContext/tblKhuyenmai" />
       <nestedChildShapes>
-        <elementListCompartment Id="33591bc5-388d-4291-b2da-8fba85aa4f3c" absoluteBounds="0.765, 12.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="e55f73e6-9cb5-45af-a3c3-47ef14a21315" absoluteBounds="0.765, 2.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="c2f318cf-930f-45e4-b39e-5424e1c934eb" absoluteBounds="0.75, 3.75, 2, 1.3862939453125005">
+    <classShape Id="e0ca5364-fdc0-4ac1-bf4b-4a51300f833c" absoluteBounds="0.75, 5.75, 2, 1.3862939453125005">
       <DataClassMoniker Name="/DataClasses1DataContext/tblLoaisanpham" />
       <nestedChildShapes>
-        <elementListCompartment Id="24d92b3b-fda4-4a1f-af07-ddf0b806070a" absoluteBounds="0.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="7fe2790d-d21a-45b0-a9a5-d5118644e915" absoluteBounds="0.765, 6.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="b2827f8d-6ed1-4d34-bcbb-e8abe793e68f" absoluteBounds="0.75, 6.375, 2, 2.1554996744791675">
+    <classShape Id="2672c93f-e8d6-4c14-82ee-320dcdb99c3c" absoluteBounds="0.75, 8.375, 2, 2.1554996744791666">
       <DataClassMoniker Name="/DataClasses1DataContext/tblSanpham" />
       <nestedChildShapes>
-        <elementListCompartment Id="b351a39b-c6c9-45b6-9fcb-fbdff8a84c97" absoluteBounds="0.765, 6.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="724479f5-b375-4693-8c42-a36aa84753de" absoluteBounds="0.765, 8.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="93f66e2b-c2e3-4f55-aecb-8c2abf25c7c3" absoluteBounds="3.5, 5.875, 2, 1.1939925130208327">
+    <classShape Id="0208d0af-7621-4a0c-aa25-65d85d7b7bea" absoluteBounds="3.5, 7.875, 2, 1.1939925130208344">
       <DataClassMoniker Name="/DataClasses1DataContext/tblSanpham_Loaihang" />
       <nestedChildShapes>
-        <elementListCompartment Id="b29bf3c1-651c-437c-8d16-6c45a89fed5e" absoluteBounds="3.515, 6.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="ce198705-b064-4ab3-b5ca-e24c76d6f5d0" absoluteBounds="3.515, 8.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.65625 : 4.69399251302083); (5.65625 : 7.89829752604167); (6.5 : 7.89829752604167)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DataClasses1DataContext/tblTrangthaidonhang/tblTrangthaidonhang_tblGiohang" />
-      <nodes>
-        <classShapeMoniker Id="cf933b71-2732-484f-a89b-5ed4af082df5" />
-        <classShapeMoniker Id="b90d1f26-c267-469a-9c9b-326f6d2ff851" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 11.6265374615385); (3.125 : 11.2515374615385); (3.125 : 1.44314697265625); (3.5 : 1.44314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DataClasses1DataContext/tblKhuyenmai/tblKhuyenmai_tblChitietkhuyenmai" />
-      <nodes>
-        <classShapeMoniker Id="7767e2db-3669-4ef9-bdce-ccece5045309" />
-        <classShapeMoniker Id="e7aa85bf-1614-420b-ba04-330fe721f554" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(1.75 : 3.75); (1.75 : 1.82097295898438); (3.04166666666667 : 1.82097295898438 : JumpStart); (3.20833333333333 : 1.82097295898438 : JumpEnd); (3.5 : 1.82097295898438)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DataClasses1DataContext/tblLoaisanpham/tblLoaisanpham_tblChitietkhuyenmai" />
-      <nodes>
-        <classShapeMoniker Id="c2f318cf-930f-45e4-b39e-5424e1c934eb" />
-        <classShapeMoniker Id="e7aa85bf-1614-420b-ba04-330fe721f554" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(1.75 : 8.53049967447917); (1.75 : 9.44314697265625); (3.04166666666667 : 9.44314697265625 : JumpStart); (3.20833333333333 : 9.44314697265625 : JumpEnd); (3.5 : 9.44314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DataClasses1DataContext/tblSanpham/tblSanpham_tblAnhsp" />
-      <nodes>
-        <classShapeMoniker Id="b2827f8d-6ed1-4d34-bcbb-e8abe793e68f" />
-        <classShapeMoniker Id="58329e35-2a5b-4f40-842e-9fea73073247" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 7.45239501953125); (3.04166666666667 : 7.45239501953125 : JumpStart); (3.20833333333333 : 7.45239501953125 : JumpEnd); (6.5 : 7.45239501953125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DataClasses1DataContext/tblSanpham/tblSanpham_tblGiohang" />
-      <nodes>
-        <classShapeMoniker Id="b2827f8d-6ed1-4d34-bcbb-e8abe793e68f" />
-        <classShapeMoniker Id="b90d1f26-c267-469a-9c9b-326f6d2ff851" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 4.94639322916667); (3.59375 : 4.94639322916667); (3.59375 : 5.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DataClasses1DataContext/tblLoaisanpham/tblLoaisanpham_tblSanpham_Loaihang" />
-      <nodes>
-        <classShapeMoniker Id="c2f318cf-930f-45e4-b39e-5424e1c934eb" />
-        <classShapeMoniker Id="93f66e2b-c2e3-4f55-aecb-8c2abf25c7c3" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 6.72199625651042); (3.04166666666667 : 6.72199625651042 : JumpStart); (3.20833333333333 : 6.72199625651042 : JumpEnd); (3.5 : 6.72199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DataClasses1DataContext/tblSanpham/tblSanpham_tblSanpham_Loaihang" />
-      <nodes>
-        <classShapeMoniker Id="b2827f8d-6ed1-4d34-bcbb-e8abe793e68f" />
-        <classShapeMoniker Id="93f66e2b-c2e3-4f55-aecb-8c2abf25c7c3" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="82b7fad5-5416-4629-b166-d83acd4484d8" absoluteBounds="5.125, 11.625, 2, 1.7708968098958331">
+    <classShape Id="1a5aae5d-14e9-4e9f-83d4-7bfbf62006d6" absoluteBounds="3.75, 13.5, 2, 1.7708968098958344">
       <DataClassMoniker Name="/DataClasses1DataContext/tblTaikhoan" />
       <nestedChildShapes>
-        <elementListCompartment Id="5c526373-cbb5-4441-af93-43becc2f202d" absoluteBounds="5.14, 12.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="23bac84f-3a80-435c-bddc-f92a43fbbbee" absoluteBounds="3.765, 13.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(6.8125 : 11.625); (6.8125 : 8.6651025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <classShape Id="3380d91d-118e-4d31-ac6d-2f411dc8d8c6" absoluteBounds="3.75, 0.75, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/DataClasses1DataContext/capnhatlancuoi1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf9fe203-2a93-4ea9-b7d9-c1e2698ae89e" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.65625 : 6.81899251302083); (5.65625 : 9.90949625651042); (6.5 : 9.90949625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/tblTrangthaidonhang/tblTrangthaidonhang_tblGiohang" />
+      <nodes>
+        <classShapeMoniker Id="558d9c29-8291-4ea8-99bf-219226f4da57" />
+        <classShapeMoniker Id="7b408541-290d-4f5e-9611-642ce57df3ac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.44314697265625); (3.5 : 3.44314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/tblKhuyenmai/tblKhuyenmai_tblChitietkhuyenmai" />
+      <nodes>
+        <classShapeMoniker Id="257c97b5-c186-4c88-9037-6d26e8a359f3" />
+        <classShapeMoniker Id="00ae2de2-7172-4ab9-a370-9a2c167c5acd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.00889322916667); (3.59375 : 7.00889322916667); (3.59375 : 4.1362939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/tblLoaisanpham/tblLoaisanpham_tblChitietkhuyenmai" />
+      <nodes>
+        <classShapeMoniker Id="e0ca5364-fdc0-4ac1-bf4b-4a51300f833c" />
+        <classShapeMoniker Id="00ae2de2-7172-4ab9-a370-9a2c167c5acd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 10.5304996744792); (1.75 : 11.4431469726562); (3.5 : 11.4431469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/tblSanpham/tblSanpham_tblAnhsp" />
+      <nodes>
+        <classShapeMoniker Id="2672c93f-e8d6-4c14-82ee-320dcdb99c3c" />
+        <classShapeMoniker Id="cc67ce11-9e38-4fb2-95cf-c4a23cb9759f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.45799438476563); (5.57291666666667 : 9.45799438476563 : JumpStart); (5.73958333333333 : 9.45799438476563 : JumpEnd); (6.5 : 9.45799438476563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/tblSanpham/tblSanpham_tblGiohang" />
+      <nodes>
+        <classShapeMoniker Id="2672c93f-e8d6-4c14-82ee-320dcdb99c3c" />
+        <classShapeMoniker Id="7b408541-290d-4f5e-9611-642ce57df3ac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.10384608723958); (3.546875 : 7.10384608723958); (3.546875 : 7.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/tblLoaisanpham/tblLoaisanpham_tblSanpham_Loaihang" />
+      <nodes>
+        <classShapeMoniker Id="e0ca5364-fdc0-4ac1-bf4b-4a51300f833c" />
+        <classShapeMoniker Id="0208d0af-7621-4a0c-aa25-65d85d7b7bea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.72199625651042); (3.5 : 8.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClasses1DataContext/tblSanpham/tblSanpham_tblSanpham_Loaihang" />
+      <nodes>
+        <classShapeMoniker Id="2672c93f-e8d6-4c14-82ee-320dcdb99c3c" />
+        <classShapeMoniker Id="0208d0af-7621-4a0c-aa25-65d85d7b7bea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.703125 : 13.5); (5.703125 : 10.3297506282552); (6.5 : 10.3297506282552)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DataClasses1DataContext/tblTaikhoan/tblTaikhoan_tblGiohang" />
       <nodes>
-        <classShapeMoniker Id="82b7fad5-5416-4629-b166-d83acd4484d8" />
-        <classShapeMoniker Id="b90d1f26-c267-469a-9c9b-326f6d2ff851" />
+        <classShapeMoniker Id="1a5aae5d-14e9-4e9f-83d4-7bfbf62006d6" />
+        <classShapeMoniker Id="7b408541-290d-4f5e-9611-642ce57df3ac" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>

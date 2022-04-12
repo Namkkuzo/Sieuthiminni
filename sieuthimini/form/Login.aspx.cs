@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,8 +14,10 @@ namespace sieuthimini.form
         protected void Page_Load(object sender, EventArgs e)
         {
             DataClasses1DataContext dc = new DataClasses1DataContext();
+            timeout.InnerHtml = Application["timeout"].ToString();
             if (IsPostBack)
             {
+
                 string tendn = Request.Form["user"];
                 string pass = Request.Form["pass"];
                 var a =dc.kiemtradangnhap(tendn).ToList();
@@ -34,7 +38,11 @@ namespace sieuthimini.form
                         Response.Redirect("quanlysp.aspx");
                     else Response.Redirect("trangchu.aspx");
                 }
+
             }
+           
+
         }
+
     }
 }

@@ -11,6 +11,7 @@
             <ul>
                 <asp:Repeater ID="Loaihang" runat="server">
                     <ItemTemplate>
+                      
                         <li><a href="danhsachsanpham.aspx?loaihang=<%# Eval("iMaloaisp") %>"><%# Eval("sTenloai") %></a></li>
                     </ItemTemplate>
                 </asp:Repeater>

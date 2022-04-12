@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="sieuthi_mini" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-53FJKIT;Initial Catalog=sieuthi_mini;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="sieuthi_miniConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-D71Q1H6;Initial Catalog=sieuthi_mini;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="sieuthi_miniConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.capnhatlancuoi" Member="capnhatlancuois">
     <Type Name="capnhatlancuoi">
       <Column Name="capnhatlancuoi" Member="capnhatlancuoi1" Type="System.DateTime" DbType="Date" CanBeNull="true" />
@@ -100,14 +100,24 @@
       <Association Name="tblTaikhoan_tblGiohang" Member="tblGiohangs" ThisKey="iMataikhoan" OtherKey="iMataikhoan" Type="tblGiohang" />
     </Type>
   </Table>
+  <Table Name="dbo.capnhatlancuoi" Member="capnhatlancuoi1s">
+    <Type Name="capnhatlancuoi1">
+      <Column Name="capnhatlancuoi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.an_hiensanpham" Method="an_hiensanpham">
+    <Parameter Name="trangthai" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
   <Function Name="dbo.xoaloaisp_sanpham" Method="xoaloaisp_sanpham">
     <Parameter Name="loaisp" Type="System.Int32" DbType="Int" />
     <Parameter Name="sp" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.an_hiensanpham" Method="an_hiensanpham">
-    <Parameter Name="trangthai" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
+  <Function Name="dbo.capnhatgiohang" Method="capnhatgiohang">
+    <Parameter Name="madonhang" Type="System.Int32" DbType="Int" />
+    <Parameter Name="trangthai" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.capnhatloaisanpham" Method="capnhatloaisanpham">
@@ -139,6 +149,48 @@
       <Column Name="dNgayhethan" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="fKhuyenmai" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="sbanner" Type="System.String" DbType="NChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.chitietsanpham" Method="chitietsanpham">
+    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
+    <ElementType Name="chitietsanphamResult">
+      <Column Name="iMasanpham" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="bDangban" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="iGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iLuotmua" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sMotachitiet" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="sTensanpham" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="sThongsosanpham" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="iMaloaisp" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fkhuyenmai" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.danhsachdonhang" Method="danhsachdonhang">
+    <Parameter Name="makh" Type="System.Int32" DbType="Int" />
+    <ElementType Name="danhsachdonhangResult">
+      <Column Name="iMadonhang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iMataikhoan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iMasanpham" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sDiachi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="sSdt" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="iTrangthaidonhang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iTongtien" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iSoluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iMataikhoan1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sTendangnhap" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="sMatkhau" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="sSodienthoai" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="bAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="iMasanpham1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sTensanpham" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="iGia1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iLuotmua" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sMotachitiet" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="sThongsosanpham" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="bDangban" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="iMatrangthai" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sTrangthai" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
     </ElementType>
   </Function>
   <Function Name="dbo.danhsachkhuyenmai" Method="danhsachkhuyenmai">
@@ -173,12 +225,42 @@
       <Column Name="fKhuyenmai" Type="System.Double" DbType="Float" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.danhsachsanphamkhongban" Method="danhsachsanphamkhongban">
+    <ElementType Name="danhsachsanphamkhongbanResult">
+      <Column Name="iMasanpham" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iLuotmua" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sAnh" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="sTensanpham" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="iGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bDangban" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="fKhuyenmai" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getProductSame" Method="getProductSame">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="number" Type="System.Int32" DbType="Int" />
+    <ElementType Name="getProductSameResult">
+      <Column Name="iMasanpham" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iLuotmua" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sAnh" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="sTensanpham" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="iGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bDangban" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.khuyenmailon" Method="khuyenmailon">
+    <ElementType Name="khuyenmailonResult">
+      <Column Name="iMakhuyenmai" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sAnh" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="sTieude" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="sbanner" Type="System.String" DbType="NChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
   <Function Name="dbo.kiemtradangnhap" Method="kiemtradangnhap">
     <Parameter Name="tendangnhap" Type="System.String" DbType="NVarChar(100)" />
     <ElementType Name="kiemtradangnhapResult">
       <Column Name="iMataikhoan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="sTendangnhap" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="sTenhienthi" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
       <Column Name="sMatkhau" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="sSodienthoai" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
       <Column Name="bAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
@@ -210,6 +292,13 @@
     <Parameter Name="loaihang" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.themgiohang" Method="themgiohang">
+    <Parameter Name="taikhoan" Type="System.Int32" DbType="Int" />
+    <Parameter Name="sanpham" Type="System.Int32" DbType="Int" />
+    <Parameter Name="soluong" Type="System.Int32" DbType="Int" />
+    <Parameter Name="diachi" Type="System.String" DbType="NVarChar(1000)" />
+    <Return Type="System.Int32" />
+  </Function>
   <Function Name="dbo.themkhuyenmai" Method="themkhuyenmai">
     <Parameter Name="noidung" Type="System.String" DbType="NVarChar(MAX)" />
     <Parameter Name="anh" Type="System.String" DbType="NVarChar(1000)" />
@@ -222,49 +311,6 @@
   <Function Name="dbo.themloaisanpham" Method="themloaisanpham">
     <Parameter Name="tenloai" Type="System.String" DbType="NVarChar(100)" />
     <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.toanbosanpham" Method="toanbosanpham">
-    <Parameter Name="loaisp" Type="System.Int32" DbType="Int" />
-    <ElementType Name="toanbosanphamResult">
-      <Column Name="iMasanpham" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="iLuotmua" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="sAnh" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
-      <Column Name="sTensanpham" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
-      <Column Name="iGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="bDangban" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="fKhuyenmai" Type="System.Double" DbType="Float" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.xemkhuyenmai" Method="xemkhuyenmai">
-    <Parameter Name="matin" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.xemsanpham" Method="xemsanpham">
-    <Parameter Name="ma" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.xoaloaisp" Method="xoaloaisp">
-    <Parameter Name="maloai" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.danhsachsanphamkhongban" Method="danhsachsanphamkhongban">
-    <ElementType Name="danhsachsanphamkhongbanResult">
-      <Column Name="iMasanpham" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="iLuotmua" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="sAnh" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
-      <Column Name="sTensanpham" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
-      <Column Name="iGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="bDangban" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="fKhuyenmai" Type="System.Double" DbType="Float" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.khuyenmailon" Method="khuyenmailon">
-    <ElementType Name="khuyenmailonResult">
-      <Column Name="iMakhuyenmai" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="sAnh" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
-      <Column Name="sTieude" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
-      <Column Name="sbanner" Type="System.String" DbType="NChar(1000)" CanBeNull="true" />
-    </ElementType>
   </Function>
   <Function Name="dbo.themsanpham" Method="themsanpham">
     <Parameter Name="Ten" Parameter="ten" Type="System.String" DbType="NVarChar(150)" />
@@ -285,58 +331,46 @@
     <Parameter Name="sdt" Type="System.String" DbType="NVarChar(10)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.themgiohang" Method="themgiohang">
-    <Parameter Name="taikhoan" Type="System.Int32" DbType="Int" />
-    <Parameter Name="sanpham" Type="System.Int32" DbType="Int" />
-    <Parameter Name="soluong" Type="System.Int32" DbType="Int" />
-    <Parameter Name="diachi" Type="System.String" DbType="NVarChar(1000)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.danhsachdonhang" Method="danhsachdonhang">
-    <Parameter Name="makh" Type="System.Int32" DbType="Int" />
-    <ElementType Name="danhsachdonhangResult">
-      <Column Name="iMadonhang" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="iMataikhoan" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="iMasanpham" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="sDiachi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
-      <Column Name="sSdt" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Column Name="iTrangthaidonhang" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="iTongtien" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="iSoluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="iGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="iMataikhoan1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="sTendangnhap" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="sMatkhau" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="sSodienthoai" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Column Name="bAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="iMasanpham1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="sTensanpham" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
-      <Column Name="iGia1" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="iLuotmua" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="sMotachitiet" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="sThongsosanpham" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="bDangban" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="iMatrangthai" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="sTrangthai" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.capnhatgiohang" Method="capnhatgiohang">
-    <Parameter Name="madonhang" Type="System.Int32" DbType="Int" />
-    <Parameter Name="trangthai" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.chitietsanpham" Method="chitietsanpham">
-    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
-    <ElementType Name="chitietsanphamResult">
+  <Function Name="dbo.timkiem" Method="timkiem">
+    <Parameter Name="ten" Type="System.String" DbType="NVarChar(1000)" />
+    <ElementType Name="timkiemResult">
       <Column Name="iMasanpham" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="bDangban" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="sTensanpham" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
       <Column Name="iGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="iLuotmua" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="sMotachitiet" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="sTensanpham" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
       <Column Name="sThongsosanpham" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="iMaloaisp" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="fkhuyenmai" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="bDangban" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.toanbosanpham" Method="toanbosanpham">
+    <Parameter Name="loaisp" Type="System.Int32" DbType="Int" />
+    <ElementType Name="toanbosanphamResult">
+      <Column Name="iMasanpham" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="iLuotmua" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sAnh" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="sTensanpham" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="iGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bDangban" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="fKhuyenmai" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.totalMyProduct" Method="totalMyProduct">
+    <Parameter Name="idUser" Type="System.Int32" DbType="Int" />
+    <ElementType Name="totalMyProductResult">
+      <Column Name="total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.xemkhuyenmai" Method="xemkhuyenmai">
+    <Parameter Name="matin" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.xemsanpham" Method="xemsanpham">
+    <Parameter Name="ma" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.xoaloaisp" Method="xoaloaisp">
+    <Parameter Name="maloai" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

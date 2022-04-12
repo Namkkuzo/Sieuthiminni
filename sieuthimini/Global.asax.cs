@@ -12,7 +12,7 @@ namespace sieuthimini
 
         protected void Application_Start(object sender, EventArgs e)
         {
-
+            Application["timeout"] = 1000;
         }
 
         protected void Session_Start(object sender, EventArgs e)

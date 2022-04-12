@@ -18,7 +18,13 @@
 			<br />
 			<p class="link"><i>Bạn chưa có tài khoản? Mời <a href="Dangki.aspx">Đăng kí</a></i></p>
 			<br />
-            <asp:Label ID="thongbao" runat="server" ></asp:Label>
+            <asp:Label ID="thongbao" runat="server"></asp:Label>
+			<!-- <p id="timeout" runat="server" ></p> -->
+		
+			
 		</form>
+	<script>
+        setTimeout("countDown()", 1000);
+    </script>
 </asp:Content>
 

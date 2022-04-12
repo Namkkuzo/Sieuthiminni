@@ -11,7 +11,8 @@ namespace sieuthimini
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            List<giohang1> list = (List<giohang1>)Session["giohang"];
+            totalCart.InnerHtml = list.Count.ToString();
         }
     }
 }

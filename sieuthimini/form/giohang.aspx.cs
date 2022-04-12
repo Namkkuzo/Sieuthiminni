@@ -13,6 +13,7 @@ namespace sieuthimini.form
         DataClasses1DataContext dc = new DataClasses1DataContext();
         protected void Page_Load(object sender, EventArgs e)
         {
+          
             DataTable table = new DataTable();
             table.Columns.Add("masp", typeof(Int32));
             table.Columns.Add("tensp", typeof(string));

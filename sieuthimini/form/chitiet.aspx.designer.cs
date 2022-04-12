@@ -15,6 +15,15 @@ namespace sieuthimini.form
     {
 
         /// <summary>
+        /// tex1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tex1;
+
+        /// <summary>
         /// anhsp control.
         /// </summary>
         /// <remarks>
@@ -40,5 +49,14 @@ namespace sieuthimini.form
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater thongsosp1;
+
+        /// <summary>
+        /// same_product control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater same_product;
     }
 }

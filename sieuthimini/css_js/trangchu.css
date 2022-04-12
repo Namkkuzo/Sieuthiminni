@@ -2,52 +2,102 @@
     grid-column: 1/13;
     background: #f5f5f5;
 }
+
 .noidungchinh_nam {
     margin: 0 auto;
     max-width: 1300px;
     width: 99%;
-    padding:0.5%;
+    padding: 0.5%;
 }
-/*làm sideshow*/ 
-#chuyenside_nam{
+/*làm sideshow*/
+#chuyenside_nam {
     width: 1000%;
     transition: all 0.8s;
 }
+
 .bao_nam {
     padding: 20px 0px 20px 0px;
     width: 100%;
     background: #fff;
 }
+
 .side_nam {
     background: #fff;
     height: 20vw;
     overflow: hidden;
-    width:70%;
+    width: 70%;
     margin: 0 auto;
-    max-width:1200px;
+    max-width: 1200px;
     position: relative;
 }
+
 .anhsideshow_nam {
     object-fit: cover;
     width: 10%;
-    float:left;
+    float: left;
 }
+
 .dieuhuong_nam {
-    color:white;
-    position:absolute;
-    padding-left:2.5%;
-    top:9vw;
-    width:95%;
+    color: white;
+    position: absolute;
+    padding-left: 2.5%;
+    top: 9vw;
+    width: 95%;
 }
-.dieuhuong_nam i:last-child{
-    float:right;
-}
+
+    .dieuhuong_nam i:last-child {
+        float: right;
+    }
+
 .fas {
-        font-size: 3.5rem;
+    font-size: 3.5rem;
+}
+
+.hover_detail {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.5;
+    align-items: center;
+    z-index: 10;
+    background: #000;
+}
+.view_detail {
+    width  : 300px;
+    height : 300px;
+    background : red;
+}
+
+.sanphamview {
+    position: relative;
+}
+
+.sanphamview:hover +  .hover_detail {
+    display: block;
+  
+}
+
+.button_xemthem {
+    background: #000;
+    opacity: 0.5;
+    align-items: center;
+    text-align: center;
+}
+
+.label_xemthem {
+    color: #fff;
+    line-height: 200px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .sanphamnoibat_nam {
-    text-align:center;
+    text-align: center;
     display: grid;
     padding: 10px;
     grid-template-columns: repeat(5, 1fr);
@@ -55,10 +105,11 @@
 }
 
 .wrapper_nam {
-    background:#fff;
-    text-align:center;
-    height:2.8rem;
+    background: #fff;
+    text-align: center;
+    height: 2.8rem;
 }
+
 .sanphannb_nam {
     background: #fff;
     width: 90%;
@@ -69,9 +120,42 @@
     color: red;
     font-weight: 400;
 }
+
+
+
+
+#layer_19{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0.5;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    background: black;
+}
+
+#layer_chitiet_4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0.5;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    background: black;
+}
+
+
 .tensanpham_nam {
-    text-decoration:none;
-    color:#000;
+    text-decoration: none;
+    color: #000;
     word-wrap: break-word;
     line-height: 1.4rem;
     display: -webkit-box;
@@ -83,20 +167,23 @@
     font-size: 1.2rem;
     padding: 2px 5% 0 5%
 }
+
 .anhsanpham_nam {
-    object-fit:cover;
+    object-fit: cover;
     display: block;
     width: 100%;
     height: 12vw;
     background-color: #fff;
 }
+
 .gia_nam {
-    line-height:1.5rem;
-    height:1.5rem;
-    padding:5px 10px 5px 10px;
+    line-height: 1.5rem;
+    height: 1.5rem;
+    padding: 5px 10px 5px 10px;
     display: block;
     background-color: #fff;
 }
+
 .sanpham_nam > .giohang {
     margin-top: 10px;
     cursor: pointer;
@@ -106,12 +193,14 @@
     height: 36px;
     text-align: center;
     line-height: 36px;
-    border:1px solid red;
+    border: 1px solid red;
     background-color: #ffeee8;
     font-size: 14px;
     color: orangered;
     font-weight: bold;
 }
+
+
 .gia_nam .gia {
     float: left;
     text-overflow: ellipsis;
@@ -122,26 +211,32 @@
     flex-shrink: 0;
     color: rgb(238, 77, 45);
 }
+
 .gia_nam .luotmua {
-    float:right;
+    float: right;
     color: rgba(0, 0, 0, 0.54);
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
-@media screen and (min-width:769px)and ( max-width:1040px){
-    .side_nam{
-        width:100%;
-        height:28vw;
+
+@media screen and (min-width:769px)and ( max-width:1040px) {
+    .side_nam {
+        width: 100%;
+        height: 28vw;
     }
+
     .sanphamnoibat_nam {
+        position: relative;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 5px;
     }
-    .anhsanpham_nam{
-        height:15vw;
+
+    .anhsanpham_nam {
+        height: 15vw;
     }
 }
+
 @media screen and (min-width:500px) and (max-width:768px) {
     .side_nam {
         width: 100%;
@@ -149,6 +244,7 @@
     }
 
     .sanphamnoibat_nam {
+        position: relative;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 5px;
     }
@@ -157,6 +253,7 @@
         height: 21vw;
     }
 }
+
 @media screen and (max-width:499px) {
     .side_nam {
         width: 100%;
@@ -164,6 +261,7 @@
     }
 
     .sanphamnoibat_nam {
+        position: relative;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5px;
     }

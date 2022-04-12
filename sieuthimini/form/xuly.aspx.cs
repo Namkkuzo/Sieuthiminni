@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -17,6 +18,18 @@ namespace sieuthimini.form
                 Session["dangnhap"] = false;
                 Session["admin"] = false;
                 Response.Write(1);
+            } 
+            if ((string)Request.Params["action"] == "set_time_out")
+            {
+                Application["timeout"] = Int32.Parse( Request.Params["time"]);
+            }
+            if ((string)Request.Params["action"] == "goTo")
+            {
+                string json = "{\"name\" : \"name\", \"age\" : 18}";
+                Response.Clear();
+                Response.ContentType = "application/json; charset=utf-8";
+                Response.Write(json);
+                Response.End();
             }
             if ((string)Request.Params["action"] == "dangban") 
             {
@@ -95,6 +108,11 @@ namespace sieuthimini.form
                 }
             }
 
+        }
+
+        void getData()
+        {
+            String connectionString = WebConfigurationManager.AppSettings["connectionString"];
         }
     }
 }

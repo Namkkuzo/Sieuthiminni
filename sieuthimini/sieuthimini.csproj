@@ -2146,6 +2146,8 @@
     <Content Include="form\quanlysp.aspx" />
     <Content Include="form\themsuasp.aspx" />
     <Content Include="form\timkiem.aspx" />
+    <Content Include="form\WebForm1.aspx" />
+    <Content Include="form\WebForm2.aspx" />
     <Content Include="form\xuly.aspx" />
     <Content Include="Global.asax" />
     <Content Include="png\anhweb\anh.jpg" />
@@ -2257,6 +2259,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataProvider.cs" />
     <Compile Include="form\chitiet.aspx.cs">
       <DependentUpon>chitiet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2292,12 +2300,21 @@
     <Compile Include="form\timkiem.aspx.designer.cs">
       <DependentUpon>timkiem.aspx</DependentUpon>
     </Compile>
-    <Compile Include="giohang.cs" />
-    <Compile Include="DataClasses1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    <Compile Include="form\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="form\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="form\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="form\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="giohang.cs" />
     <Compile Include="form\Dangki.aspx.cs">
       <DependentUpon>Dangki.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2375,11 +2392,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master.Master" />
-    <Content Include="DataClasses1.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="ckeditor_4.14.0_full\ckeditor\CHANGES.md" />
     <Content Include="ckeditor_4.14.0_full\ckeditor\LICENSE.md" />
     <Content Include="ckeditor_4.14.0_full\ckeditor\plugins\scayt\CHANGELOG.md" />
@@ -2395,9 +2407,6 @@
     <Content Include="ckeditor_4.14.0_full\ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
     <Content Include="ckeditor_4.14.0_full\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
     <Content Include="ckeditor_4.14.0_full\ckeditor\skins\moono-lisa\readme.md" />
-    <None Include="DataClasses1.dbml.layout">
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
-    </None>
     <Content Include="fontawesome\less\brands.less" />
     <Content Include="fontawesome\less\fontawesome.less" />
     <Content Include="fontawesome\less\regular.less" />
@@ -2452,6 +2461,14 @@
     <Content Include="fontawesome\webfonts\fa-solid-900.ttf" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

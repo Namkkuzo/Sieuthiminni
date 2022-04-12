@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace sieuthimini.form
 {
@@ -19,6 +14,8 @@ namespace sieuthimini.form
             thongsosp1.DataBind();
             anhsp.DataSource = dc.layanhsp(masp, null);
             anhsp.DataBind();
+            //same_product.DataSource = dc.getProductSame(masp , 5);
+            //same_product.DataBind();
         }
     }
 }

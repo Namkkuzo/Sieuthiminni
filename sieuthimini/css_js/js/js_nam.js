@@ -4,6 +4,17 @@ function myFunction_master(x) {
     var y = document.getElementById("danhmuc_master");
     y.classList.toggle("hihi_master");
 }
+function goto(page) {
+    $.post("xuly.aspx",
+        {
+            "action": "goTo",
+            "page": page
+        },
+        function (data) {
+            console.log(data);
+        }
+    )
+}
 function dangxuat() {
     $.post("xuly.aspx",
         { "action": "dangxuat" },
@@ -165,4 +176,19 @@ function dagiao() {
         }
     }
     location.reload();
+}
+
+function countDown() {
+    var seconds = document.getElementById("ContentPlaceHolder1_timeout").innerHTML;
+    console.log(seconds);
+    if (seconds > 0) {
+        document.getElementById("ContentPlaceHolder1_timeout").innerHTML = seconds - 1;
+        $.post("xuly.aspx",
+            {
+                "action": "set_time_out",
+                "time": seconds - 1
+            });
+        setTimeout("countDown()", 1000);
+    }
+
 }

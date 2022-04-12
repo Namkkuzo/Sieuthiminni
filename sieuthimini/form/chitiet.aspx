@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="chitiet.aspx.cs" Inherits="sieuthimini.form.chitiet" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
    <link href="../css_js/style.css" rel="stylesheet" />
+    <link href="../css_js/trangchu.css" rel="stylesheet" />
    <link href="../fontawesome/css/solid.css" rel="stylesheet" />
    <link href="../fontawesome/css/brands.css" rel="stylesheet" />
    <link href="../fontawesome/css/fontawesome.css" rel="stylesheet" />
@@ -9,6 +10,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <main id="content">
+    <label id ="tex1" runat="server"></label>
             <div class="slider">
                 <div class="khunganhhienthi">
                     <img class="anhhienthi" src="" alt="" />
@@ -84,6 +86,49 @@
                         </div>
                 </ItemTemplate>
             </asp:Repeater>
+        <div id="thongtin1">    
+             <!--
+                 <div class="chitietsp">
+                 <div class="demucthongso">Sản phẩm liên quan</div>
+                 <div class="thongsosp">
+                     <%# Eval("sThongsosanpham") %>
+                 </div>
+             </div>
+                 -->
+                <div  class="sanphamnoibat_nam">
+                <asp:Repeater ID="same_product" runat="server">
+                     <ItemTemplate>
+                        <div class="sanpham_nam">
+                            <div class="sanphamview">
+                                
+                                <!-- <div id ="layer_chitiet_<%#Container.ItemIndex %>" ></div> -->
+                                <img class="anhsanpham_nam" src="../png/anhweb/<%# Eval("sAnh") %>" />
+                                <div class="wrapper_nam">
+                                    <a href="chitiet.aspx?masp=<%# Eval("iMasanpham") %>" class="tensanpham_nam"><%# Eval("sTensanpham") %></a>
+                                </div>
+                                <div class="gia_nam">
+                                    <div class="gia">
+                                        <span style="font-size: 0.8rem;" class="_3fVV-h">₫</span>
+                                        <span class="giakhuyenmai_nam"><%# Eval("iGia") %></span>
+                                    </div>
+                                    <div class="luotmua">
+                                        <span class="luotmua">Đã bán <%# Eval("iLuotmua") %></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- <div class ="hover_detail">
+                                <div class="view_detail"> </div>
+                            </div> -->
+                            <span class="giohang" onclick="themgiohang(<%# Eval("iMasanpham") %>,<%# Eval("iGia") %>)">Thêm vào giỏ hàng</span>
+                        </div>
+                    </ItemTemplate>
+                   
+                </asp:Repeater>
+            </div>
+        </div>
+        <script>document.getElementById('layer_chitiet_4').innerHTML = '<a class ="label_xemthem" href ="WebForm1.aspx" >Xem thêm</a>';</script>
+
         </main>
     <script src="../css_js/js/chitietsp.js"></script>
 </asp:Content>  

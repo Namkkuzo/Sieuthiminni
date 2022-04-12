@@ -38,13 +38,18 @@
                         <input  id="inputtimkiem_master" type="text" placeholder="Tìm kiếm..." />
                         <button class="button_timkiem_master" onclick="timkiem()"></button>
                     </div>
+
+                    
                     <%
                         if ((bool)Session["dangnhap"] && (bool)Session["admin"])
                         {%>
                     <a class="giohang_master" href="quanlydonhang.aspx"></a>
                     <%}
                         else
-                        {%> <a class="giohang_master" href="giohang.aspx"></a>
+                        {%> <a class="giohang_master myCart" href="giohang.aspx">
+                           <!--  <div runat="server" id="totalCart" class ="totalCart"></div> -->
+
+                            </a>
                     <%} %>
                 </div>
             </div>
